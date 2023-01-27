@@ -1,0 +1,19 @@
+s=input()
+test=True
+som=0
+while(test==True):
+    try:
+        s=list(s)
+        s.pop(s.index("n"))
+        s.pop(s.index("i"))
+        s.pop(s.index("n"))
+        s.pop(s.index("e"))
+        s.pop(s.index("t"))
+        s.pop(s.index("e"))
+        s.pop(s.index("e"))
+        s.pop(s.index("n"))
+        som+=1
+        s.append("n")
+    except:
+        test=False
+print(som)
